@@ -17,7 +17,11 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+<<<<<<< HEAD
         scene = new Scene(loadFXML("primary"), 1024,796);
+=======
+        scene = new Scene(loadFXML("primary"));
+>>>>>>> refs/heads/nawras
         stage.setScene(scene);
         stage.show();
     }
@@ -28,7 +32,7 @@ public class App extends Application {
 
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
-        return fxmlLoader.load();
+        return fxmlLoader.load(); 	
     }
 
     public static void main(String[] args) {
